@@ -12,7 +12,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'docs'),
     filename: 'bundle.js',
-    publicPath: '/SerenityMock/',
+    publicPath: '/SerenityMock./',
     clean: true,
   },
   devServer: {
