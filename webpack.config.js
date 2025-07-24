@@ -5,8 +5,6 @@ const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin'
 
 const isDev = process.env.NODE_ENV !== 'production';
 
-console.log(process.env.NODE_ENV);
-
 module.exports = {
   target:'web',
   mode: isDev ? 'development' : 'production',
@@ -14,7 +12,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'docs'),
     filename: 'bundle.js',
-    publicPath: '/SerenityMock',
+    publicPath: '/SerenityMock/',
     clean: true,
   },
   devServer: {
