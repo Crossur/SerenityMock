@@ -4,8 +4,6 @@ import { FaArrowCircleLeft } from "react-icons/fa";
 
 const ResultsCard = ({photos,currentIndex,setCurrentIndex})=>{
 
-  console.log(photos);
-
   const goToNext = () => {
     setCurrentIndex((prev) => (prev + 1) % photos.length);
   };
@@ -18,10 +16,6 @@ const ResultsCard = ({photos,currentIndex,setCurrentIndex})=>{
 
   const photo = photos[currentIndex];
 
-  console.log(currentIndex,'currentIndex');
-
-  console.log(photo)
-
   return(
   <>
   <div className="flex items-center justify-center px-4 results-4 select-none">
@@ -29,8 +23,6 @@ const ResultsCard = ({photos,currentIndex,setCurrentIndex})=>{
 
       <div className="absolute inline-block top-2 right-3 flex pt-2 opacity-100 md:opacity-0 lg:opacity-100">
         {photos.map(((_,index) => { 
-          console.log(index,'index');
-          console.log(currentIndex,'currentIndex')
           return(<div className={`h-2 w-2 rounded-full ${index===currentIndex ? "bg-white" : "bg-stone-400"}`}/>)
         }))}
       </div>

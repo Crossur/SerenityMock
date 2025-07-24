@@ -12,6 +12,5 @@ root.render(
 );
 
 if (module.hot) {
-   console.log('is hot');
   module.hot.accept();
 }
