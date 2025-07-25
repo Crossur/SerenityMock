@@ -1,5 +1,5 @@
 {
-  "homepage": "https://crossur.github.io/SerenityMock",
+  "homepage": "https://crossur.github.io/SerenityMock/",
   "scripts": {
     "build": "webpack",
     "dev": "webpack serve --mode development",

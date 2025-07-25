@@ -5,7 +5,7 @@ const BenefitsCard = ({ imageUrl, header, text}) => {
   const [flipped, setFlipped] = useState(false);
 
 return (
-  <div style={{ perspective: "1500px" }} className={`px-4 w-full h-[30rem] cursor-pointer group`} onClick={() => setFlipped(prev => !prev)}>
+  <div style={{ perspective: "1500px" }} className={`px-4 w-full h-[22rem] cursor-pointer group`} onClick={() => setFlipped(prev => !prev)}>
     <div className={`relative w-full h-full transition-transform duration-700 transform-style-preserve-3d rounded-xl hover:scale-98 ${flipped ? "rotate-y-180" : ""}`}>
       
       {/* Front Side */}

@@ -139,7 +139,7 @@ const Home = () => {
         </div>
 
         <div style={{ animation: "flowDown 1s ease 2.4s forwards", opacity: 0 }} className="-translate-y-10 md:-translate-y-0 row-start-8 text-white font-black">
-          <span className="text-[clamp(6.5rem,12vw,15rem)]">Serenity</span>
+          <span className="text-[clamp(6rem,6vw,15rem)]">Serenity</span>
         </div>
       </div>
 
@@ -188,7 +188,7 @@ const Home = () => {
 
       {/* Benefits Section */}
       <div id="benefitsSection" ref={benefitsRef} className="w-full grid relative -top-38 pt-7 font-Dm" style={animateBenefits ? { animation: "flowLeft 1s forwards" } : { opacity: 0 }}>
-        <span className="flex items-center justify-center text-[3.9rem] font-semibold text-white pb-5">
+        <span className="flex items-center justify-center text-center text-[3.9rem] font-semibold text-white pb-5">
           Why Serenity?
         </span>
 
