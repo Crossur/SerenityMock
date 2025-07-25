@@ -12,8 +12,8 @@ const BreakdownCard = ({icon,frontText,backText}) => {
       {/* Front Side */}
       <div className="absolute inset-0 h-[4.6rem] flex items-center justify-left text-white rounded-xl bg-[#1f1e1c]">
 
-        <span className="text-[clamp(1.5rem,6vw,2rem)] translate-x-2">{icon}</span>
-        <span className="text-[clamp(1.5rem,6vw,2rem)] translate-x-4">{frontText}</span>
+        <span className="text-[clamp(2rem,6vw,2rem)] translate-x-4 sm:translate-x-3">{icon}</span>
+        <span className="text-[clamp(1.7rem,6vw,2rem)] text-center sm:text-left sm:translate-x-6 -translate-x-2">{frontText}</span>
 
       </div>
       {/* Back Side */}

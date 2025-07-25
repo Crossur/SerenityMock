@@ -244,7 +244,7 @@ const Home = () => {
 
       {/* Results Section */}
 
-        <div style={animateResults ? { animation: "flowLeft 1s forwards" } : { opacity: 0 }} ref={resultsRef} className="relative w-full inline-flex -top-30 flex-col items-center justify-center font-Dm">
+        <div style={animateResults ? { animation: "flowLeft 1s forwards" } : { opacity: 0 }} ref={resultsRef} className="select-none relative w-full inline-flex -top-30 flex-col items-center justify-center font-Dm">
           <span className="text-white text-[4rem] font-semibold">Results</span>
           <div className="flex items-center justify-center gap-6">
             <ResultsCard 
@@ -257,7 +257,7 @@ const Home = () => {
 
        {/* End Section */}
 
-        <div className="w-full h-[40rem] bg-[#1f1e1c] flex items-center justify-center flex-col font-Dm">
+        <div className="select-none w-full h-[40rem] bg-[#1f1e1c] flex items-center justify-center flex-col font-Dm">
 
           <img src={logo} className="h-[35rem]"></img>
 
