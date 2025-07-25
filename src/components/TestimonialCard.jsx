@@ -24,7 +24,7 @@ const TestimonialCard = ({testimonials,currentIndex,setCurrentIndex})=>{
 
       <div className="absolute top-2 right-3 flex gap-2 pt-2 opacity-100 md:opacity-0 lg:opacity-100">
         {testimonials.map(((_,index) => { 
-          return(<div className={`h-2 w-2 rounded-full ${index===currentIndex ? "bg-white" : "bg-stone-400"}`}/>)
+          return(<div key={index} className={`h-2 w-2 rounded-full ${index===currentIndex ? "bg-white" : "bg-stone-400"}`}/>)
         }))}
       </div>
 

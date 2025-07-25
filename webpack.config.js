@@ -58,7 +58,6 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: 'src/styles', to: 'styles' },
         { from: 'src/assets', to: 'assets' },
     //     { from: 'src/js', to: 'js' },
       ],
