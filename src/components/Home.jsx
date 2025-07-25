@@ -257,9 +257,9 @@ const Home = () => {
 
        {/* End Section */}
 
-        <div className="select-none w-full h-[40rem] bg-[#1f1e1c] flex items-center justify-center flex-col font-Dm">
+        <div className="w-full h-[40rem] bg-[#1f1e1c] flex items-center justify-center flex-col font-Dm">
 
-          <img src={logo} className="h-[35rem]"></img>
+          <img src={logo} className="select-none h-[35rem]"></img>
 
           <span className="text-white text-[clamp(1rem,6vw,2rem)] text-center font-semibold -translate-y-20">California</span>
           <span className="text-white text-[clamp(1rem,6vw,1.4rem)] text-center -translate-y-20">1429 Hollow Pine Way</span>
@@ -267,7 +267,7 @@ const Home = () => {
 
           <a href="mailto:customersupport@serenity.com" className="cursor-pointer transform hover:scale-95 duration-200 text-white text-[clamp(1rem,6vw,1.4rem)] text-center md:-translate-y-35 -translate-y-4 md:translate-x-170">customersupport@serenity.com</a>
 
-          <span className="text-white text-[clamp(1rem,6vw,1.4rem)] text-center md:-translate-y-44 -translate-y-23 md:-translate-x-170">(123)-456-789</span>
+          <span className="text-white text-[clamp(1rem,6vw,1.4rem)] text-center md:-translate-y-44 -translate-y-23 md:-translate-x-170 select-auto">(123)-456-789</span>
 
         </div>
 
