@@ -236,7 +236,7 @@ const Home = () => {
         <div className="col-start-1 row-start-3 md:row-start-1 md:col-start-4 md:-translate-x-20">
           <AwardCard
             image={peopleBadge}
-            awardText="Proudly server over 10,000 happy customers"
+            awardText="Proudly served over 10,000 happy customers!"
             size="w-[clamp(8rem,6vw,3rem)] -translate-y-2 md:-translate-y-0"
           />
         </div>
