@@ -30,7 +30,7 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env', '@babel/preset-react'],
-            plugins: isDev ? ['react-refresh/babel'] : [],
+            // plugins: isDev ? ['react-refresh/babel'] : [],
           },
         },
       },
@@ -64,5 +64,5 @@ module.exports = {
     }),
     // ...(isDev ? [new ReactRefreshWebpackPlugin()] : []),
   ],
-  devtool: isDev ? 'eval-source-map' : false,
+  // devtool: isDev ? 'eval-source-map' : false,
 };

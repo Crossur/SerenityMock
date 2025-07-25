@@ -139,7 +139,7 @@ const Home = () => {
         </div>
 
         <div style={{ animation: "flowDown 1s ease 2.4s forwards", opacity: 0 }} className="-translate-y-10 md:-translate-y-0 row-start-8 text-white font-black">
-          <span className="text-[clamp(6rem,6vw,15rem)]">Serenity</span>
+          <span className="text-[clamp(5.7rem,6vw,15rem)]">Serenity</span>
         </div>
       </div>
 
