@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
+// const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 const isDev = process.env.NODE_ENV !== 'production';
 
@@ -62,7 +62,7 @@ module.exports = {
     //     { from: 'src/js', to: 'js' },
       ],
     }),
-    ...(isDev ? [new ReactRefreshWebpackPlugin()] : []),
+    // ...(isDev ? [new ReactRefreshWebpackPlugin()] : []),
   ],
   devtool: isDev ? 'eval-source-map' : false,
 };
