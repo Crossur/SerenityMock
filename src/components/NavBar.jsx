@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { useLocation, NavLink } from "react-router";
+import React, { useState } from "react";;
 import logo from "/home/crossur/White's Cleaning Website/src/assets/images/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMail } from "react-icons/io5";

@@ -138,8 +138,9 @@ const Home = () => {
           </span>
         </div>
 
-        <div style={{ animation: "flowDown 1s ease 2.4s forwards", opacity: 0 }} className="-translate-y-10 md:-translate-y-0 row-start-8 text-white font-black">
+        <div style={{ animation: "flowDown 1s ease 2.4s forwards", opacity: 0 }} className="-translate-y-10 md:-translate-y-0 row-start-8 text-white font-black flex flex-col">
           <span className="text-[clamp(5.7rem,6vw,15rem)]">Serenity</span>
+          <button onClick={()=>{location.assign("https://calendly.com/luisacruz-dev")}} className="cursor-pointer transform hover:scale-95 duration-200 text-[clamp(1.6rem,6vw,2rem)] border border-2 text-white rounded-4xl flex h-[3rem] translate-y-5 font-light w-[13rem] self-center items-center px-8 py-8 justify-center">Book Now</button>
         </div>
       </div>
 
