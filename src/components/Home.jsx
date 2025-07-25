@@ -167,7 +167,7 @@ const Home = () => {
 
         <span className="text-stone-200 text-[4.2rem] font-semibold font-Dm">Services</span>
 
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-2 px-3">
           <BreakdownCard
             icon={<FaSyringe/>}
             frontText="Premium Facial Filler Treatment"

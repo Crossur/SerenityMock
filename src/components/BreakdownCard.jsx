@@ -6,15 +6,18 @@ const BreakdownCard = ({icon,frontText,backText}) => {
 
   return (
   <>
-   <div style={{ perspective: "1500px" }} className={`cursor-pointer`} onClick={() => setFlipped(prev => !prev)}>
-    <div className={`relative backface-hidden transition-transform duration-700 transform-style-preserve-3d rounded-xl hover:scale-95 px-4 ${flipped ? "rotate-x-180" : ""}`}>
-      <div className="inset-0 h-[4rem] flex items-center justify-left px-7 gap-4 text-white rounded-xl bg-[#1f1e1c]">
+   <div style={{ perspective: "1500px" }} className={`cursor-pointer hover:scale-95 duration-400`} onClick={() => setFlipped(prev => !prev)}>
+    <div className={`backface-hidden transition transform duration-700 transform-style-preserve-3d rounded-xl ${flipped ? "pointer-events-none rotate-x-180" : ""}`}>
 
-        <span className="text-[clamp(1.5rem,6vw,2rem)]">{icon}</span>
-        <span className="text-[clamp(1.5rem,6vw,2rem)]">{frontText}</span>
+      {/* Front Side */}
+      <div className="absolute inset-0 h-[4.6rem] flex items-center justify-left text-white rounded-xl bg-[#1f1e1c]">
+
+        <span className="text-[clamp(1.5rem,6vw,2rem)] translate-x-2">{icon}</span>
+        <span className="text-[clamp(1.5rem,6vw,2rem)] translate-x-4">{frontText}</span>
 
       </div>
-      <div className="rotate-x-180 backface-hidden inset-0 absolute flex items-center justify-left rounded-xl bg-[#1f1e1c]">
+      {/* Back Side */}
+      <div className="rotate-x-180 backface-hidden inset-0 px-7 flex items-center transition transform justify-left rounded-xl bg-[#1f1e1c] h-[4.6rem]">
         <span className="text-white text-[clamp(1.1rem,6vw,0.8rem)] text-center">{backText}</span>
       </div>
     </div>
